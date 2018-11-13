@@ -23,7 +23,7 @@ class AccountSession
 	public static function destroy() {
 		session_destroy();
 		unset($_SESSION['token']);
-		header('Location:/login');
+		header('Location:'. ROOT .'login');
 	}
 
 	public static function isActive() {
