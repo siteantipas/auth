@@ -1,0 +1,8 @@
+RewriteEngine On 
+
+# skip all files and directories from rewrite rule below
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# rewrite URL for friendly display of user's profile as well as companies name
+RewriteRule ^(.*)$  index.php?request=$1 [QSA,L]
