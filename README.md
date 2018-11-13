@@ -18,6 +18,18 @@ $connection = [
 - Open the file "authdb2018.sql", copy all it's content, paste in the phpmyadmin textarea, click on "Go"
 - Your database shoud now contain the table named "users"
 
+
+
+More configuration settings
+
+- To change more settings such as app name, email, base directory, open the file located at controller/settings.php
+and modify the following;
+
+define('APP_NAME', 'Auth'); # Change to your project name
+define('ROOT', '/'); # If project was added to a sub folder in your htdocs, change this to that sub folder where you have installed the project e.g /my-application/ 
+					 # NOTICE: make sure it starts and ends with with a / 
+define('APP_EMAIL', 'Info@antipas.site');  # In case you want to change this, make sure you change it to a valid email address 
+
 Now the downloaded files are extracted to your htdocs folder,
 
 - Test your app by accessing localhost. You should see the login form right a way.
@@ -25,4 +37,4 @@ Now the downloaded files are extracted to your htdocs folder,
 - Please, comment or create a new GitHub issue everything didn't work well for you. I will provide you with some assistance.
 
 
-Thank you
+
