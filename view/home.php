@@ -40,7 +40,7 @@
 			  <p class="lead">You will be notified by email once your account has been confirmed by our team.</p>
 			  <hr class="my-4">
 			  <p>This usually takes less than a day to confirm.</p>
-			  <a class="btn btn-primary btn-lg" href="?logout" role="button">Logout</a>
+			  <a class="btn btn-primary btn-lg" href="<?php print ROOT ?>home?logout" role="button">Logout</a>
 			</div> 
 	 	 </div>
 	 	 <div class="col-sm-0 col-m-0 col-lg-1 col-xl-2">
