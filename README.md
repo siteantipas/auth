@@ -25,9 +25,14 @@ More configuration settings
 - To change more settings such as app name, email, base directory, open the file located at controller/settings.php
 and modify the following;
 
+<?php
+
+
+define('HOST', $_SERVER['HTTP_HOST']); # DO NOT CHANGE THIS
 define('APP_NAME', 'Auth'); # Change to your project name
 define('ROOT', '/'); # If project was added to a sub folder in your htdocs, change this to that sub folder where you have installed the project e.g /my-application/ 
 					 # NOTICE: make sure it starts and ends with with a / 
+define('APP_URL', 'http://'.HOST.ROOT); #  Please, DO NOT CHANGE THIS
 define('APP_EMAIL', 'Info@antipas.site');  # In case you want to change this, make sure you change it to a valid email address 
 
 Now the downloaded files are extracted to your htdocs folder,
